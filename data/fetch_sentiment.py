@@ -150,8 +150,18 @@ def run(source: str = "all") -> None:
         news_df = fetch_news_headlines()
         if not news_df.empty:
             path = RAW_DIR / "news_headlines.parquet"
-            news_df.to_parquet(path)
-            logger.info("Saved → %s", path)
+
+            if path.exists():
+                existing = pd.read_parquet(path)
+                combined = pd.concat([existing, news_df])
+                combined = combined[~combined["title"].duplicated(keep="first")]
+                combined = combined.sort_values("published_at")
+                new_count = len(combined) - len(existing)
+                combined.to_parquet(path)
+                logger.info("Appended %d new headlines → %s (total: %d)", new_count, path, len(combined))
+            else:
+                news_df.to_parquet(path)
+                logger.info("Saved → %s (%d headlines)", path, len(news_df))
 
 
 def main():
