@@ -1,0 +1,174 @@
+{
+  "all_features": {
+    "features_used": [
+      "daily_return",
+      "extreme_fear",
+      "extreme_greed",
+      "fng_momentum_10d",
+      "fng_momentum_5d",
+      "fng_normalized",
+      "fng_normalized_lag_1",
+      "fng_normalized_lag_3",
+      "fng_normalized_lag_7",
+      "fng_sma_14",
+      "fng_sma_7",
+      "fng_value",
+      "momentum_10d",
+      "momentum_20d",
+      "momentum_5d",
+      "news_negative_ratio",
+      "news_positive_ratio",
+      "news_sentiment_mean",
+      "news_sentiment_mean_lag_1",
+      "news_sentiment_mean_lag_3",
+      "news_sentiment_mean_lag_7",
+      "news_sentiment_sma_7",
+      "news_sentiment_std",
+      "news_volume",
+      "price_sentiment_divergence",
+      "sma_crossover",
+      "volatility_20d",
+      "volume_fng_ratio",
+      "volume_sma_20"
+    ],
+    "n_features": 29,
+    "params": {
+      "max_depth": 8,
+      "learning_rate": 0.012051739569722825,
+      "n_estimators": 250,
+      "subsample": 0.841915762459027,
+      "colsample_bytree": 0.8563846495837443,
+      "min_child_weight": 9,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "early_stopping_rounds": 50,
+      "random_state": 42
+    },
+    "cv_metrics": {
+      "f1_mean": 0.6675098752257933,
+      "f1_std": 0.02386313797005614,
+      "accuracy_mean": 0.502013422818792,
+      "accuracy_std": 0.02659276880021336,
+      "auc_roc_mean": 0.5138014317097575,
+      "auc_roc_std": 0.039115566962190346
+    },
+    "test_metrics": {
+      "f1": 0.6591760299625468,
+      "accuracy": 0.49162011173184356,
+      "auc_roc": 0.5194180819180819,
+      "test_size": 179,
+      "train_size": 715
+    },
+    "top_features": [
+      {
+        "feature": "sma_crossover",
+        "importance": 0.08956719934940338
+      },
+      {
+        "feature": "momentum_5d",
+        "importance": 0.07202867418527603
+      },
+      {
+        "feature": "price_sentiment_divergence",
+        "importance": 0.06191648170351982
+      },
+      {
+        "feature": "fng_momentum_10d",
+        "importance": 0.06185460090637207
+      },
+      {
+        "feature": "fng_normalized_lag_7",
+        "importance": 0.06114344298839569
+      },
+      {
+        "feature": "volume_sma_20",
+        "importance": 0.060012336820364
+      },
+      {
+        "feature": "fng_normalized_lag_3",
+        "importance": 0.058901380747556686
+      },
+      {
+        "feature": "momentum_10d",
+        "importance": 0.05795665830373764
+      },
+      {
+        "feature": "volatility_20d",
+        "importance": 0.057779766619205475
+      },
+      {
+        "feature": "fng_sma_14",
+        "importance": 0.05687139555811882
+      }
+    ]
+  },
+  "no_sentiment": {
+    "features_used": [
+      "daily_return",
+      "momentum_10d",
+      "momentum_20d",
+      "momentum_5d",
+      "sma_crossover",
+      "volatility_20d",
+      "volume_sma_20"
+    ],
+    "n_features": 7,
+    "params": {
+      "max_depth": 9,
+      "learning_rate": 0.029201368039083193,
+      "n_estimators": 350,
+      "subsample": 0.9573539482471998,
+      "colsample_bytree": 0.9409739361552634,
+      "min_child_weight": 10,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "early_stopping_rounds": 50,
+      "random_state": 42
+    },
+    "cv_metrics": {
+      "f1_mean": 0.6669147099247457,
+      "f1_std": 0.024113314493210327,
+      "accuracy_mean": 0.5006711409395973,
+      "accuracy_std": 0.027096146628438057,
+      "auc_roc_mean": 0.4978672761112576,
+      "auc_roc_std": 0.06136159139147007
+    },
+    "test_metrics": {
+      "f1": 0.6591760299625468,
+      "accuracy": 0.49162011173184356,
+      "auc_roc": 0.41127622377622375,
+      "test_size": 179,
+      "train_size": 715
+    },
+    "top_features": [
+      {
+        "feature": "momentum_5d",
+        "importance": 0.18027612566947937
+      },
+      {
+        "feature": "volume_sma_20",
+        "importance": 0.1488202065229416
+      },
+      {
+        "feature": "momentum_10d",
+        "importance": 0.1474718302488327
+      },
+      {
+        "feature": "volatility_20d",
+        "importance": 0.13335710763931274
+      },
+      {
+        "feature": "momentum_20d",
+        "importance": 0.13189561665058136
+      },
+      {
+        "feature": "daily_return",
+        "importance": 0.12974238395690918
+      },
+      {
+        "feature": "sma_crossover",
+        "importance": 0.12843666970729828
+      }
+    ]
+  }
+}

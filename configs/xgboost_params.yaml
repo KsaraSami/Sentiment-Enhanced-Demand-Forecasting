@@ -1,0 +1,15 @@
+model:
+  objective: binary:logistic
+  eval_metric: logloss
+  max_depth: 6
+  learning_rate: 0.1
+  n_estimators: 500
+  subsample: 0.8
+  colsample_bytree: 0.8
+  min_child_weight: 3
+  early_stopping_rounds: 50
+
+training:
+  test_size: 0.2
+  n_splits: 5  # TimeSeriesSplit folds
+  random_state: 42

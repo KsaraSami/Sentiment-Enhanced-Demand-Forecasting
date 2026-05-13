@@ -1,0 +1,30 @@
+{
+  "all_features": {
+    "n_features": 29,
+    "sequence_length": 30,
+    "test_metrics": {
+      "f1": 0.6591760299625468,
+      "accuracy": 0.49162011173184356,
+      "auc_roc": 0.5545704295704295
+    },
+    "best_val_loss": 0.6945363879203796,
+    "epochs_trained": 17,
+    "train_size": 582,
+    "val_size": 103,
+    "test_size": 179
+  },
+  "no_sentiment": {
+    "n_features": 7,
+    "sequence_length": 30,
+    "test_metrics": {
+      "f1": 0.6541353383458647,
+      "accuracy": 0.4860335195530726,
+      "auc_roc": 0.5398351648351648
+    },
+    "best_val_loss": 0.6933211088180542,
+    "epochs_trained": 17,
+    "train_size": 582,
+    "val_size": 103,
+    "test_size": 179
+  }
+}

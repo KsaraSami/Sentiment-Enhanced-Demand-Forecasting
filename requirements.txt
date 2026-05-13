@@ -1,0 +1,18 @@
+# Auto-generated from pyproject.toml — keep in sync for deployment
+yfinance>=0.2.40
+pandas>=2.2
+pyarrow>=16.0
+transformers>=4.41
+torch>=2.3
+praw>=7.7
+scikit-learn>=1.5
+xgboost>=2.0
+lightgbm>=4.3
+optuna>=3.6
+matplotlib>=3.9
+seaborn>=0.13
+jupyter>=1.0
+fastapi>=0.111
+uvicorn>=0.30
+streamlit>=1.35
+pyyaml>=6.0

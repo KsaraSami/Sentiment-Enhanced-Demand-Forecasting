@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files (raw data not tracked — reproducible via scripts)
+data/raw/*.parquet
+data/raw/*.csv
+data/raw/*.db
+data/processed/*.parquet
+data/processed/*.csv
+
+# Model artifacts (heavy binary files only — keep CSVs and JSONs for notebooks)
+models/saved/*.pkl
+models/saved/*.pt
+models/saved/*.joblib
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
